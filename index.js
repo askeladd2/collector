@@ -155,6 +155,10 @@ app.get('/', (req, res) => {
     res.send('Bot is running');
 });
 
+app.get('/ping', (req, res) => {
+    res.send('Bot is alive');
+  });
+  
 app.listen(PORT, () => {
     console.log(`Express server is running on http://localhost:${PORT}`);
 });
