@@ -125,7 +125,7 @@ eventEmitter.on('ready', () => {
                             } catch (banError) {
                                 console.error(`Error banning user from channel ${channelId}:`, banError);
                             }
-                        }, 15760); // 16 hours = 57600000 milliseconds
+                        }, 57600000); // 16 hours = 57600000 milliseconds
                     } 
                 }
             } catch (error) {
