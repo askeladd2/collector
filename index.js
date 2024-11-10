@@ -14,8 +14,7 @@ app.get('/', (req, res) => res.send('Bot is running'));
 app.get('/ping', (req, res) => res.send('Bot is alive'));
 
 bot.on('message', async (msg) => {
-    const chatId = msg.chat.id;
-    
+    const chatId = msg.chat.id;   
     if (msg.text === '/start') {
         try {
             const channelButtons = channels.map(channel => ({
